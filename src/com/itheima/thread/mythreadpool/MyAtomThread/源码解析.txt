@@ -1,0 +1,13 @@
+    public final int incrementAndGet() {
+        return U.getAndAddInt(this, VALUE, 1) + 1;
+    }
+
+
+@HotSpotIntrinsicCandidate
+    public final int getAndAddInt(Object o, long offset, int delta) {
+        int v;
+        do {
+            v = getIntVolatile(o, offset);
+        } while (!weakCompareAndSetInt(o, offset, v, v + delta));
+        return v;
+    }
