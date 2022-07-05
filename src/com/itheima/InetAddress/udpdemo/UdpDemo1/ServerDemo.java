@@ -1,9 +1,8 @@
-package com.itheima.InetAddress.client;
+package com.itheima.InetAddress.udpdemo.UdpDemo1;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
-import java.net.SocketException;
 
 /**
  * @author lina @date 2022/6/2916:48

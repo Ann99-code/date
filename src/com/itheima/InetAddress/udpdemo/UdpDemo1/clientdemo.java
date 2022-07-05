@@ -1,4 +1,4 @@
-package com.itheima.InetAddress.client;
+package com.itheima.InetAddress.udpdemo.UdpDemo1;
 
 import java.io.IOException;
 import java.net.*;

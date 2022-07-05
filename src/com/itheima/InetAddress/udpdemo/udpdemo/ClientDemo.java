@@ -1,10 +1,9 @@
-package com.itheima.InetAddress.client.udpdemo;
+package com.itheima.InetAddress.udpdemo.udpdemo;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
-import java.net.SocketException;
 import java.util.Scanner;
 
 /**
