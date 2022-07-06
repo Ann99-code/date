@@ -16,6 +16,10 @@ public class ClientDemo {
         OutputStream os = socket.getOutputStream();
         BufferedOutputStream bos = new BufferedOutputStream(os);
         int b;
+        while ((b = bis.read()) != -1) {
+            bos.write((char) b);//通过网络写到服务器中,一边读，一边写
+        }
+        socket.shutdownOutput();//写完了之后给服务器一个结束标志，告诉服务器，文件已经传输完毕
 
 
     }
