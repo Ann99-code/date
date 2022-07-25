@@ -13,6 +13,7 @@ public class Student {
     public Student(String name, int age) {
         this.name = name;
         this.age = age;
+        System.out.println("这是有名字有年纪的");
     }
 
     private Student(String name) {

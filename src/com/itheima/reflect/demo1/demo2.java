@@ -22,5 +22,8 @@ public class demo2 {
         Constructor<Student> constructor1 = studentClass.getConstructor(String.class,int.class);
         System.out.println(constructor);
         System.out.println(constructor1);
+        System.out.println("-----------------------------------");
+        Constructor<Student> declaredConstructor = studentClass.getDeclaredConstructor(String.class);
+        System.out.println(declaredConstructor);
     }
 }
