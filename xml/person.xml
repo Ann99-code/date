@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--<!DOCTYPE persons SYSTEM 'F:\date\src\com\itheima\xmlparse\persondtd.dtd'>-->
+<!--<!DOCTYPE persons [
+        <!ELEMENT persons (person)>
+        <!ELEMENT person (name,age)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT age (#PCDATA)>
+        ]>-->
+<!--system表示引入的是本地的dtd文件-->
+<!--<!DOCTYPE persons PUBLIC "dtd文件的名称" "dtd文件的url">-->
+<persons xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://scn.lina.cs"
+         xsi:schemaLocation="http://scn.lina.cs">
+    <person>
+        <name >张三</name>
+        <age>23</age>
+    </person>
+    <person>
+        <name >李四</name>
+        <age>25</age>
+    </person>
+</persons>
